@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/fonts/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/swiper10-bundle.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">LOGO</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class=" btn btn-sm btn-theme"><span><i class="fas fa-phone"></i></span> +91 98745
+                63210</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <section class="contact-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="contact_form mb-0 p-4 bg-white rounded-4 shadow">
+            <h3 class="mb-1">Send Us A Message</h3>
+            <p>
+              Give us chance to serve and bring magic to your brand.
+            </p>
+
+            <form class="contactForm mt-5" action="thank-you.html" onsubmit="return validateForm()">
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <label>Full Name</label>
+                  <input class="form-control name" type="text" name="name" placeholder="Enter Your Name">
+                  <span class="error"></span>
+                </div>
+                <div class="col-md-6">
+                  <label>Your Email</label>
+                  <input class="form-control email" type="email" name="email" placeholder="sunnyaid@example.com">
+                  <span class="error"></span>
+                </div>
+                <div class="col-12">
+                  <label>Message</label>
+                  <textarea class="form-control message" rows="6" name="message"
+                    placeholder="How can we help you?"></textarea>
+                  <span class="error"></span>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-theme">Send Message <i class="ms-3 fas fa-angle-right"></i></button>
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="p-4 shadow rounded-4 bg-white h-100">
+            <h3>Contact Information</h3>
+            <p><a href="mailto:info@email.com">info@email.com</a></p>
+            <p><a href="tel:+91 98765 41230">+91 98765 41230</a></p>
+            <p>Address: 123 Main St, City, Country</p>
+
+            <h3 class="mt-4">Office Hours</h3>
+            <p>Monday - Friday: 9am - 5pmI</p>
+            <p>Saturday - Sunday: Closed</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3>About Us</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        </div>
+        <div class="col-md-4">
+          <h3>Quick Links</h3>
+          <ul class="footer-nav">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3>Contact Us</h3>
+          <p><a href="mailto:info@email.com">info@email.com</a></p>
+          <p><a href="tel:+91 98765 41230">+91 98765 41230</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/jquery-3.7.1.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/swiper10-bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+
+
+  <script>
+    function validateForm() {
+      let isValid = true;
+
+      const nameField = document.querySelector('.name');
+      const emailField = document.querySelector('.email');
+      const messageField = document.querySelector('.message');
+
+      const nameError = nameField.nextElementSibling;
+      const emailError = emailField.nextElementSibling;
+      const messageError = messageField.nextElementSibling;
+
+      // Reset error messages
+      document.querySelectorAll('.error').forEach(span => span.textContent = '');
+
+      const name = nameField.value.trim();
+      const email = emailField.value.trim();
+      const message = messageField.value.trim();
+
+      if (!name || name.length < 3 || name.length > 20 || !isNaN(name)) {
+        nameError.textContent = "Invalid name (3-20 characters, no numbers)";
+        isValid = false;
+      }
+      if (!email || email.length > 35 || !email.includes('@') || !email.match(/\.\w{2,4}$/)) {
+        emailError.textContent = "Invalid email";
+        isValid = false;
+      }
+      if (!message) {
+        messageError.textContent = "Message is required";
+        isValid = false;
+      }
+
+      return isValid;
+    }
+  </script>
+
+</body>
+
+</html>

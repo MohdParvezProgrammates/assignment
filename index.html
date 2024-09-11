@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/fonts/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/swiper10-bundle.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">LOGO</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class=" btn btn-sm btn-theme"><span><i class="fas fa-phone"></i></span> +91 98745
+                63210</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="banner-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="banner-content">
+            <h1>Empowering Travel Businesses with Innovative SaaS Solutions</h1>
+            <p>Delivering Software Solutions to Enhance Efficiency and Growth for Travel Businesses Worldwide.</p>
+            <a href="about.html" class="btn btn-theme">Get Started <i class="ms-3 fas fa-angle-right"></i></a>
+          </div>
+
+          <hr>
+
+          <div class="client-block">
+            <h5>We proudly serve a diverse portfolio of clients</h5>
+            <p>including travel agencies, car rental businesses, boutique hotels, and large tour operators, helping them
+              unlock their full potential through innovative software</p>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="assets/images/aena.PNG" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/boundless.PNG" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/cnn.PNG" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/iata.PNG" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/intermundial.PNG" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/latam.PNG" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/producthunt.PNG" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="banner-img-block">
+            <img src="assets/images/banner-img.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <section class="features-section">
+
+    <div class="heading-section">
+      <h2 class="text-center">Comprehensive Features to Elevate Your Travel Business</h2>
+    </div>
+
+    <div class="container">
+      <ul class="nav nav-pills" id="featuresTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="travelmanagement-tab" data-bs-toggle="tab"
+            data-bs-target="#travelmanagement-tab-pane" type="button" role="tab"
+            aria-controls="travelmanagement-tab-pane" aria-selected="true">Travel Management</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="carrentalmanagement-tab" data-bs-toggle="tab"
+            data-bs-target="#carrentalmanagement-tab-pane" type="button" role="tab"
+            aria-controls="carrentalmanagement-tab-pane" aria-selected="false">Car Rental Management</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="hotelmanagement-tab" data-bs-toggle="tab"
+            data-bs-target="#hotelmanagement-tab-pane" type="button" role="tab" aria-controls="hotelmanagement-tab-pane"
+            aria-selected="false">Hotel Management</button>
+        </li>
+      </ul>
+
+      <div class="tab-content" id="featuresTabContent">
+        <!-- Travel Management Features -->
+        <div class="tab-pane fade show active" id="travelmanagement-tab-pane" role="tabpanel"
+          aria-labelledby="travelmanagement-tab" tabindex="0">
+          <div class="row row-cols-lg-3 row-cols-md-2 g-3 justify-content-center">
+            <div class="col">
+              <div class="features-card">
+                <div class="card-icon">
+                  <i class="fas fa-laptop"></i>
+                </div>
+                <h5>Automated Booking System</h5>
+                <p>Simplify the reservation process with automated booking, real-time availability, and instant
+                  confirmations.</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="features-card">
+                <div class="card-icon">
+                  <i class="fas fa-globe"></i>
+                </div>
+                <h5>Multi-Currency and Multi-Language Support</h5>
+                <p>Cater to global customers with support for multiple currencies and languages, offering a seamless
+                  user experience.</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="features-card">
+                <div class="card-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <h5>Integrated Customer Communication</h5>
+                <p>Manage customer interactions directly within the platform, from quotes to booking confirmations and
+                  reminders.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Car Rental Management Features -->
+        <div class="tab-pane fade" id="carrentalmanagement-tab-pane" role="tabpanel"
+          aria-labelledby="carrentalmanagement-tab" tabindex="0">
+          <div class="row row-cols-lg-3 row-cols-md-2 g-3 justify-content-center">
+            <div class="col">
+              <div class="features-card">
+                <div class="card-icon">
+                  <i class="fas fa-car"></i>
+                </div>
+                <h5>Fleet Management</h5>
+                <p>Keep track of your vehicle inventory, maintenance schedules, and availability in real-time.</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="features-card">
+                <div class="card-icon">
+                  <i class="fas fa-credit-card"></i>
+                </div>
+                <h5>Online Booking and Payments</h5>
+                <p>Offer your customers a smooth online booking experience with secure, integrated payment options.</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="features-card">
+                <div class="card-icon">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <h5>Dynamic Pricing Engine</h5>
+                <p>Adjust rental rates automatically based on demand, availability, and seasonal trends to maximize
+                  revenue.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hotel Management Features -->
+        <div class="tab-pane fade" id="hotelmanagement-tab-pane" role="tabpanel" aria-labelledby="hotelmanagement-tab"
+          tabindex="0">
+          <div class="row row-cols-lg-3 row-cols-md-2 g-3 justify-content-center">
+            <div class="col">
+              <div class="features-card">
+                <div class="card-icon">
+                  <i class="fas fa-hotel"></i>
+                </div>
+                <h5>Centralized Reservation System</h5>
+                <p>Manage all hotel bookings from one platform, including direct bookings, OTA reservations, and group
+                  bookings.</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="features-card">
+                <div class="card-icon">
+                  <i class="fas fa-broom"></i>
+                </div>
+                <h5>Housekeeping and Maintenance Coordination</h5>
+                <p>Streamline operations by assigning tasks to housekeeping staff, tracking status, and managing
+                  maintenance requests.</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="features-card">
+                <div class="card-icon">
+                  <i class="fas fa-user"></i>
+                </div>
+                <h5>Guest Self-Service Portal</h5>
+                <p>Enhance the guest experience with a self-service portal for check-ins, booking modifications, and
+                  real-time communication.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="newslatter-section">
+    <div class="container">
+      <div class="newslatter-inner">
+        <div>
+          <h2>Join Our Newsletter</h2>
+          <p>Join our newsletter and be informed of our news and exceptional sales.</p>
+
+          <div class="newslatter-form">
+            <form action="thank-you.html" onsubmit="return validateForm()">
+              <div class="input-group">
+                <input class="form-control newslatterEmail" type="email" name="email" placeholder="Enter your email">
+                <button type="submit" class="btn btn-light">SUBSCRIBE</button>
+              </div>
+              <span class="error"></span>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="testimonial-section">
+    <div class="heading-section">
+      <h2>why clients love us</h2>
+    </div>
+
+    <div class="container">
+      <div class="swiper testimonial-swiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+
+            <div class="testimonial-card">
+              <div class="testimonial-avater">
+                <div class="testimonial-img mt-10">
+                  <img src="assets/images/user1.jpg" alt="">
+                </div>
+                <div class="testimonial-holder mt-10">
+                  <h2 class="testimonial-title">Liam Johnson</h2>
+                  <span class="testimonial-sub-title">Our Clients</span>
+                  <div class="testimonial-reating ul_li">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>5.0</span>
+                  </div>
+                </div>
+              </div>
+              <p class="testimonial-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia aspernatur,
+                vero doloremque eos ratione facere qui expedita nobis magnam aliquam, modi ipsum, sed voluptatum
+                deleniti et enim earum at sequi?</p>
+              <div class="tes_shape">
+                <img src="assets/images/tes-quo01.png" alt="">
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="swiper-slide">
+
+            <div class="testimonial-card">
+              <div class="testimonial-avater">
+                <div class="testimonial-img mt-10">
+                  <img src="assets/images/user2.jpg" alt="">
+                </div>
+                <div class="testimonial-holder mt-10">
+                  <h2 class="testimonial-title">Liam Johnson</h2>
+                  <span class="testimonial-sub-title">Our Clients</span>
+                  <div class="testimonial-reating ul_li">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>5.0</span>
+                  </div>
+                </div>
+              </div>
+              <p class="testimonial-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia aspernatur,
+                vero doloremque eos ratione facere qui expedita nobis magnam aliquam, modi ipsum, sed voluptatum
+                deleniti et enim earum at sequi?</p>
+              <div class="tes_shape">
+                <img src="assets/images/tes-quo01.png" alt="">
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-slide">
+
+            <div class="testimonial-card">
+              <div class="testimonial-avater">
+                <div class="testimonial-img mt-10">
+                  <img src="assets/images/user3.jpg" alt="">
+                </div>
+                <div class="testimonial-holder mt-10">
+                  <h2 class="testimonial-title">Liam Johnson</h2>
+                  <span class="testimonial-sub-title">Our Clients</span>
+                  <div class="testimonial-reating ul_li">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>5.0</span>
+                  </div>
+                </div>
+              </div>
+              <p class="testimonial-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia aspernatur,
+                vero doloremque eos ratione facere qui expedita nobis magnam aliquam, modi ipsum, sed voluptatum
+                deleniti et enim earum at sequi?</p>
+              <div class="tes_shape">
+                <img src="assets/images/tes-quo01.png" alt="">
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="swiper-slide">
+
+            <div class="testimonial-card">
+              <div class="testimonial-avater">
+                <div class="testimonial-img mt-10">
+                  <img src="assets/images/user2.jpg" alt="">
+                </div>
+                <div class="testimonial-holder mt-10">
+                  <h2 class="testimonial-title">Liam Johnson</h2>
+                  <span class="testimonial-sub-title">Our Clients</span>
+                  <div class="testimonial-reating ul_li">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>5.0</span>
+                  </div>
+                </div>
+              </div>
+              <p class="testimonial-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia aspernatur,
+                vero doloremque eos ratione facere qui expedita nobis magnam aliquam, modi ipsum, sed voluptatum
+                deleniti et enim earum at sequi?</p>
+              <div class="tes_shape">
+                <img src="assets/images/tes-quo01.png" alt="">
+              </div>
+            </div>
+
+          </div>
+
+          <div class="swiper-slide">
+
+            <div class="testimonial-card">
+              <div class="testimonial-avater">
+                <div class="testimonial-img mt-10">
+                  <img src="assets/images/user3.jpg" alt="">
+                </div>
+                <div class="testimonial-holder mt-10">
+                  <h2 class="testimonial-title">Liam Johnson</h2>
+                  <span class="testimonial-sub-title">Our Clients</span>
+                  <div class="testimonial-reating ul_li">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>5.0</span>
+                  </div>
+                </div>
+              </div>
+              <p class="testimonial-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia aspernatur,
+                vero doloremque eos ratione facere qui expedita nobis magnam aliquam, modi ipsum, sed voluptatum
+                deleniti et enim earum at sequi?</p>
+              <div class="tes_shape">
+                <img src="assets/images/tes-quo01.png" alt="">
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3>About Us</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        </div>
+        <div class="col-md-4">
+          <h3>Quick Links</h3>
+          <ul class="footer-nav">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3>Contact Us</h3>
+          <p><a href="mailto:info@email.com">info@email.com</a></p>
+          <p><a href="tel:+91 98765 41230">+91 98765 41230</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/jquery-3.7.1.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/swiper10-bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+
+
+  <script>
+
+    function validateForm() {
+      let isValid = true;
+
+      const emailField = document.querySelector('.newslatterEmail');
+
+      const emailError = emailField.parentElement.nextElementSibling;
+      // Reset error messages
+      document.querySelectorAll('.error').forEach(span => span.textContent = '');
+
+      const email = emailField.value.trim();
+
+      if (!email || email.length > 35 || !email.includes('@') || !email.match(/\.\w{2,4}$/)) {
+        emailError.textContent = "Invalid email";
+        isValid = false;
+      }
+      return isValid;
+    }
+  </script>
+
+</body>
+
+</html>
